@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Bhawani Cleaning Products</title>
+  <meta name="description" content="Shop Bhawani's complete range of plant-based, eco-friendly cleaning products. Floor cleaners, kitchen cleaners, bathroom cleaners & more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <!-- SHOP HERO -->
+  <div class="shop-hero">
+    <div class="container">
+      <h1>Shop All Products</h1>
+      <p>Plant-based. Dermatologically tested. Safe for your family &amp; the Earth.</p>
+    </div>
+  </div>
+
+  <!-- MAIN SHOP LAYOUT -->
+  <main id="main-content">
+    <div class="container">
+      <div class="shop-layout">
+
+        <!-- SIDEBAR FILTERS -->
+        <aside class="shop-sidebar" id="shop-sidebar">
+          <div class="filter-group">
+            <h4>Category</h4>
+            <label class="filter-item"><input type="checkbox" checked /> All Products</label>
+            <label class="filter-item"><input type="checkbox" /> Appliance Cleaners</label>
+            <label class="filter-item"><input type="checkbox" /> Floor Cleaners</label>
+            <label class="filter-item"><input type="checkbox" /> Kitchen Cleaners</label>
+            <label class="filter-item"><input type="checkbox" /> Toilet &amp; Bathroom</label>
+            <label class="filter-item"><input type="checkbox" /> Dishwash Liquids</label>
+            <label class="filter-item"><input type="checkbox" /> Air Fresheners</label>
+            <label class="filter-item"><input type="checkbox" /> Combos</label>
+            <label class="filter-item"><input type="checkbox" /> Mega Saver 5L</label>
+          </div>
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <label class="filter-item"><input type="checkbox" /> Under ₹199</label>
+            <label class="filter-item"><input type="checkbox" /> ₹200 – ₹399</label>
+            <label class="filter-item"><input type="checkbox" /> ₹400 – ₹699</label>
+            <label class="filter-item"><input type="checkbox" /> Above ₹700</label>
+          </div>
+          <div class="filter-group">
+            <h4>Fragrance</h4>
+            <label class="filter-item"><input type="checkbox" /> Rose</label>
+            <label class="filter-item"><input type="checkbox" /> Citrus / Lemon</label>
+            <label class="filter-item"><input type="checkbox" /> Floral</label>
+            <label class="filter-item"><input type="checkbox" /> Tropical</label>
+            <label class="filter-item"><input type="checkbox" /> Fragrance-Free</label>
+          </div>
+          <div class="filter-group">
+            <h4>Pack Size</h4>
+            <label class="filter-item"><input type="checkbox" /> Single Pack</label>
+            <label class="filter-item"><input type="checkbox" /> Pack of 2-3</label>
+            <label class="filter-item"><input type="checkbox" /> Pack of 4-6</label>
+            <label class="filter-item"><input type="checkbox" /> 5L Bulk</label>
+          </div>
+        </aside>
+
+        <!-- PRODUCTS MAIN -->
+        <div class="shop-main" id="shop-main">
+          <div class="shop-top">
+            <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="shop-sidebar">&#9776; Filters</button>
+            <p class="shop-count" id="shop-count">Showing 12 products</p>
+            <select class="sort-select" id="sort-select" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+              <option value="new">Newest First</option>
+            </select>
+          </div>
+
+          <!-- BESTSELLERS -->
+          <h2 class="section-title shop-heading-first" id="bestsellers">Bestsellers</h2>
+          <div class="shop-grid" id="bestsellers-grid">
+            <a href="productDetail.html" class="product-card" id="sp-1">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;30 OFF</div>
+                <img src="images/product-magic-eraser.jpg" alt="Magic Eraser Sponge" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(2.1k)</span></div>
+                <h3 class="product-name">Magic Eraser Multi-Purpose Cleaning Sponge, 4pc</h3>
+                <div class="product-price"><span class="sale-price">&#8377;299</span><span class="regular-price">&#8377;329</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Magic Eraser Sponge 4pc" data-price="299" id="sp-atc-1">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-2">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;161 OFF</div>
+                <img src="images/product-washing-machine.jpg" alt="Washing Machine Descaler" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(4.3k)</span></div>
+                <h3 class="product-name">Washing Machine Descaler Pouches, 3 Pouches</h3>
+                <div class="product-price"><span class="sale-price">&#8377;199</span><span class="regular-price">&#8377;360</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Washing Machine Descaler 3pc" data-price="199" id="sp-atc-2">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-3">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;300 OFF</div>
+                <img src="images/product-toilet-bathroom.jpg" alt="Toilet Bathroom Combo" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(5.6k)</span></div>
+                <h3 class="product-name">Toilet + Bathroom Cleaner Combo, 1L + 1L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;299</span><span class="regular-price">&#8377;599</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Toilet Bathroom Combo" data-price="299" id="sp-atc-3">+ Add to cart</button>
+              </div>
+            </a>
+          </div>
+
+          <!-- FLOOR CLEANERS -->
+          <h2 class="section-title shop-heading" id="floor">Floor Cleaners</h2>
+          <div class="shop-grid" id="floor-grid">
+            <a href="productDetail.html" class="product-card" id="sp-4">
+              <div class="product-image-wrap">
+                <img src="images/product-floor-cleaner.jpg" alt="Floor Cleaner 850ml" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★☆ <span class="rating-count">(987)</span></div>
+                <h3 class="product-name">Professional Tile &amp; Floor Cleaner, 850ml</h3>
+                <div class="product-price"><span class="sale-price">&#8377;269</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Floor Cleaner 850ml" data-price="269" id="sp-atc-4">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-5">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;800 OFF</div>
+                <img src="images/mega-floor-floral-5l.jpg" alt="Floor Cleaner Floral 5L" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(489)</span></div>
+                <h3 class="product-name">Floor Cleaner Concentrate – Floral Wave, 5L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;799</span><span class="regular-price">&#8377;1,599</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Floor Cleaner Floral 5L" data-price="799" id="sp-atc-5">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-6">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;800 OFF</div>
+                <img src="images/mega-floor-tropical-5l.jpg" alt="Floor Cleaner Tropical 5L" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(374)</span></div>
+                <h3 class="product-name">Floor Cleaner Concentrate – Tropical Breeze, 5L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;799</span><span class="regular-price">&#8377;1,599</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Floor Cleaner Tropical 5L" data-price="799" id="sp-atc-6">+ Add to cart</button>
+              </div>
+            </a>
+          </div>
+
+          <!-- KITCHEN CLEANERS -->
+          <h2 class="section-title shop-heading" id="kitchen">Kitchen Cleaners</h2>
+          <div class="shop-grid" id="kitchen-grid">
+            <a href="productDetail.html" class="product-card" id="sp-7">
+              <div class="product-image-wrap">
+                <img src="images/product-kitchen-spray.jpg" alt="Kitchen Degreaser Spray" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(1.8k)</span></div>
+                <h3 class="product-name">Kitchen Cleaner &amp; Degreaser Spray – 450ml</h3>
+                <div class="product-price"><span class="sale-price">&#8377;250</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Kitchen Degreaser 450ml" data-price="250" id="sp-atc-7">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-8">
+              <div class="product-image-wrap">
+                <img src="images/product-dishwash.jpg" alt="Natural Dishwash Liquid 1L" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(3.2k)</span></div>
+                <h3 class="product-name">Natural Dishwash Liquid – Plant-Based, 1L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;299</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Dishwash Liquid 1L" data-price="299" id="sp-atc-8">+ Add to cart</button>
+              </div>
+            </a>
+          </div>
+
+          <!-- TOILET & BATHROOM -->
+          <h2 class="section-title shop-heading" id="toilet">Toilet &amp; Bathroom</h2>
+          <div class="shop-grid" id="toilet-grid">
+            <a href="productDetail.html" class="product-card" id="sp-9">
+              <div class="product-image-wrap">
+                <img src="images/product-toilet-cleaner.jpg" alt="Toilet Cleaner Rose 1L" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★☆ <span class="rating-count">(762)</span></div>
+                <h3 class="product-name">Toilet Cleaner Liquid – Rose Fragrance, 1L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;275</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Toilet Cleaner Rose 1L" data-price="275" id="sp-atc-9">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-10">
+              <div class="product-image-wrap">
+                <div class="discount-tag">BULK SAVER</div>
+                <img src="images/mega-toilet-5l.jpg" alt="Toilet Cleaner 5L" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(612)</span></div>
+                <h3 class="product-name">Toilet Cleaner Liquid – Rose Fragrance, Bulk 5L</h3>
+                <div class="product-price"><span class="sale-price">&#8377;799</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Toilet Cleaner 5L" data-price="799" id="sp-atc-10">+ Add to cart</button>
+              </div>
+            </a>
+          </div>
+
+          <!-- COMBOS -->
+          <h2 class="section-title shop-heading" id="combos">Cleaning Combos</h2>
+          <div class="shop-grid" id="combos-shop-grid">
+            <a href="productDetail.html" class="product-card" id="sp-11">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;249 OFF</div>
+                <img src="images/combo-bathroom.jpg" alt="Bathroom Combo" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(1.1k)</span></div>
+                <h3 class="product-name">Bathroom Combo – Tap, Shower &amp; Tile Cleaner</h3>
+                <div class="product-price"><span class="sale-price">&#8377;649</span><span class="regular-price">&#8377;898</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Bathroom Combo" data-price="649" id="sp-atc-11">+ Add to cart</button>
+              </div>
+            </a>
+            <a href="productDetail.html" class="product-card" id="sp-12">
+              <div class="product-image-wrap">
+                <div class="discount-tag">&#8377;300 OFF</div>
+                <img src="images/combo-trial-kit.jpg" alt="Home Care Trial Kit" class="product-img" loading="lazy" />
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★ <span class="rating-count">(3.7k)</span></div>
+                <h3 class="product-name">Home Care Trial Kit – Plant-Based Essentials</h3>
+                <div class="product-price"><span class="sale-price">&#8377;499</span><span class="regular-price">&#8377;799</span></div>
+                <button class="add-to-cart-btn" data-add-to-cart data-name="Home Care Trial Kit" data-price="499" id="sp-atc-12">+ Add to cart</button>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- /.shop-main -->
+      </div><!-- /.shop-layout -->
+    </div>
+  </main>
+
+  <!-- WHATSAPP -->
+
+  <div id="footerId"></div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
