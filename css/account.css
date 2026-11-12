@@ -898,51 +898,12 @@
 /* Login / Register Pages Css */
 
 
-.site-header {
-  height: var(--header-h);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 clamp(18px, 4vw, 58px);
-  background: rgba(255, 255, 255, 0.94);
-  border-bottom: 1px solid var(--clr-border);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  backdrop-filter: blur(14px);
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 29px;
-  font-weight: 800;
-  color: var(--clr-primary);
-  letter-spacing: -0.8px;
-}
-.brand-mark {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border-radius: 17px;
-  background: #e9f7ef;
-  font-size: 26px;
-}
-.header-link {
-  color: var(--clr-grey);
-  font-weight: 600;
-  transition: var(--transition);
-}
-.header-link:hover {
-  color: var(--clr-primary-l);
-}
 .auth-shell {
   width: min(1120px, calc(100% - 40px));
   min-height: min(700px, calc(100vh - 120px));
   margin: 34px auto;
   display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   background: var(--clr-white);
   border: 1px solid rgba(224, 224, 216, 0.9);
   border-radius: var(--radius-xl);
@@ -1093,6 +1054,7 @@
 }
 .form-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 17px;
 }
 .field label {
@@ -1153,8 +1115,9 @@
   font-size: 11px;
   margin-top: 6px;
 }
-.form-row {
+.form-grid .form-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
@@ -1162,7 +1125,8 @@
   color: #777;
 }
 .check {
-  width: 50%;
+  width: auto;
+  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1286,7 +1250,7 @@
 
 @media (max-width: 820px) {
   .auth-shell {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     max-width: 590px;
     margin: 22px auto;
   }
@@ -1314,23 +1278,6 @@
   }
 }
 @media (max-width: 480px) {
-  .site-header {
-    height: 64px;
-    padding: 0 17px;
-  }
-  .brand {
-    font-size: 24px;
-    gap: 9px;
-  }
-  .brand-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: 14px;
-    font-size: 22px;
-  }
-  .header-link {
-    font-size: 12px;
-  }
   .auth-shell {
     width: calc(100% - 22px);
     margin: 12px auto 20px;
@@ -1376,7 +1323,7 @@
   .input-wrap input {
     height: 50px;
   }
-  .form-row {
+  .form-grid .form-row {
     align-items: flex-start;
   }
   .otp-grid {
