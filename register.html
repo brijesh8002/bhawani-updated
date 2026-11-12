@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Bhawani</title>
+    <meta name="description"
+    content="Bhawani offers plant-based, eco-friendly household cleaning products trusted by 1Mn+ Indian families." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div id="header"></div>
+
+    <main class="auth-shell">
+        <section class="visual-panel">
+            <div class="visual-content"><span class="eyebrow">✦ Join the Bhawani family</span>
+                <h1>A little more joy in <em>everyday living.</em></h1>
+                <p>Create an account to enjoy a more personal shopping experience, keep track of every order and collect
+                    rewards along the way.</p>
+                <div class="feature-list">
+                    <div class="feature"><span class="feature-icon">✓</span> Quick, easy checkout</div>
+                    <div class="feature"><span class="feature-icon">♧</span> Your details in one place</div>
+                    <div class="feature"><span class="feature-icon">✧</span> Member-only benefits</div>
+                    <div class="feature"><span class="feature-icon">♡</span> A wishlist you can keep</div>
+                </div>
+            </div>
+            <div class="visual-bottom">Welcome in. We're glad you're here.</div>
+        </section>
+        <section class="form-panel">
+            <div class="form-topline">Already a member?&nbsp; <a href="login.html">Sign in</a></div>
+            <div class="form-heading"><span class="mini">Get started</span>
+                <h2>Create your account</h2>
+                <p>Just a few details and you're all set.</p>
+            </div>
+            <form class="form-grid" data-demo-form
+                data-message="Your registration details are valid. Connect this form to your registration API to create the account.">
+                <div class="field"><label for="fullname">Full name</label>
+                    <div class="input-wrap"><input id="fullname" name="name" type="text"
+                            placeholder="Enter your full name" autocomplete="name" required minlength="2"><span
+                            class="input-icon">♙</span></div>
+                </div>
+                <div class="field"><label for="email">Email address</label>
+                    <div class="input-wrap"><input id="email" name="email" type="email" placeholder="you@example.com"
+                            autocomplete="email" required><span class="input-icon">✉</span></div>
+                </div>
+                <div class="field"><label for="phone">Phone number</label>
+                    <div class="input-wrap"><input id="phone" name="phone" type="tel" placeholder="+91 98765 43210"
+                            autocomplete="tel" pattern="[+0-9 ()-]{10,18}" required><span class="input-icon">☎</span>
+                    </div>
+                </div>
+                <div class="field"><label for="password">Create password</label>
+                    <div class="input-wrap has-toggle"><input id="password" name="password" type="password"
+                            placeholder="At least 8 characters" autocomplete="new-password" minlength="8"
+                            required><button class="toggle-password" type="button"
+                            data-toggle-password="password">SHOW</button></div>
+                    <div class="field-hint">Use at least 8 characters.</div>
+                </div>
+                <div class="field"><label for="confirm">Confirm password</label>
+                    <div class="input-wrap has-toggle"><input id="confirm" name="confirm_password" type="password"
+                            placeholder="Enter password again" autocomplete="new-password" minlength="8"
+                            required><button class="toggle-password" type="button"
+                            data-toggle-password="confirm">SHOW</button></div>
+                </div>
+                <label class="check" style="font-size:12px;color:#777"><input type="checkbox" required> I agree to the
+                    terms and privacy policy.</label>
+                <div class="notice" role="status" aria-live="polite"></div><button class="primary-btn"
+                    type="submit">Create my account&nbsp; →</button>
+            </form>
+            <div class="form-footer">By joining, you're choosing a simpler way to shop.</div>
+        </section>
+    </main>
+    
+      <div id="footerId"></div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+
+
+  <script src="js/auth.js"></script>
+  <script src="js/script.js"></script>
+
+
+    <!-- <script>document.querySelector('form').addEventListener('submit', e => { const a = document.getElementById('password'), b = document.getElementById('confirm'); if (a.value !== b.value) { e.preventDefault(); const n = document.querySelector('.notice'); n.textContent = 'Passwords do not match. Please check and try again.'; n.className = 'notice error show'; } });</script> -->
+</body>
+
+</html>
